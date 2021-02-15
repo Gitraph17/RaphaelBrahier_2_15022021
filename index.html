@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title> Reservia - Hébergements et activités pour des vancances de rêve </title>
+        <link rel="icon" href="images/logo/Favicon.png" />
+        <link href="style.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/a7f7be9ef6.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="BlocPage">
+
+        <header class="SiteHeader">
+            <img class="SiteHeader__logo" src="images/logo/Reservia.svg" alt="Logo Reservia"> </img>
+            <nav class="HeaderNav">
+                <ul class="MenuList HeaderNavMenu">
+                    <li><a class="HeaderNavMenu__link HeaderNavMenu__link--active" href="#hébergements">Hébergements</a></li>
+                    <li><a class="HeaderNavMenu__link" href="#activités">Activités</a></li>
+                    <li><a class="HeaderNavMenu__link HeaderNavMenu__link--BlueBold" href="#">S'inscrire</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <form class="SearchForm">
+            <h1 class="SearchForm__headline">Trouvez votre hébergement pour des vacances de rêve</h1>
+            <p class="SearchForm__subhead">En plein centre-ville ou en pleine nature</p>
+            <div class="SearchFunction">
+                <label class="InputBlock">
+                    <i class="InputBlock__icone fas fa-map-marker-alt"></i> <!--Icône Font Awesome "map-marker" -->
+                    <input class="InputBlock__EntryField" type="text" placeholder="Marseille, France" />
+                </label>
+                <button class="SearchForm__SearchButton" type="button">Rechercher</button>
+            </div>
+        </form>
+
+        <div class="filters">
+            <h2 class ="filters__headline">Filtres</h2>
+            <ul class="MenuList filters__menu">
+                <li class="filters__item">
+                    <img src="images/Icones/money-bill-wave-solid.svg" class="filters__icone" alt="Icône du filtre Économique"/>                
+                    <h3>Économique</h3>
+                </li>
+                <li class="filters__item">
+                <img src="images/Icones/child-solid.svg" class="filters__icone" alt="Icône du filtre Famille"/>
+                    <h3>Familial</h3>
+                </li>
+                <li class="filters__item">  
+                    <img src="images/Icones/heart-solid.svg" class="filters__icone" alt="Icône du filtre Romantique"/>       
+                    <h3>Romantique</h3>
+                </li>
+                <li class="filters__item">
+                    <img src="images/Icones/dog-solid.svg" class="filters__icone" alt="Icône du filtre Animaux autorisés"/>    
+                    <h3>Animaux autorisés</h3>
+                </li>
+            </ul>
+        </div>
