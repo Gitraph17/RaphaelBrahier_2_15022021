@@ -1,6 +1,7 @@
 .BlocPage{
     margin: auto;
     width: 90%;
+    max-width: 1400px;;
     font-family: Raleway;
 }
 
@@ -102,8 +103,9 @@
 
 .filters{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .filters__menu{
@@ -128,7 +130,7 @@
 .filters__icone{
     width: 18px;
     height: 18px;
-    padding:10.5px 10.5px 10.5px 10.5px;
+    padding:10.5px;
     background-color:#DEEBFF;
     border-radius: 40px;
     position:relative;
@@ -137,12 +139,157 @@
   }
 
   h3{
-      padding-left: 10px;
-      padding-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .filters__headline{
-      font-size: 1rem;
+    font-size: 1rem;
+    margin-left: 8px;
+  }
+
+  .filters__info{
+    width:100%;
+    display: flex;
+    align-items: center;
+    margin:15px 0  30px 8px;
+  }
+
+  .IconeInfo{
+    height: 10px;
+    width: 10px;
+    padding: 5px;
+    border: 2px solid #F2F2F2;
+    border-radius:17px;
+    margin-right: 10px;
+  }
+
+/*=============================================ACCOMODATIONS=============================================*/
+
+  .accomodations{
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.9rem;
+  }
+
+  .allAccomodationsArticles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .allAccomodations{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 880px;
+    height: 625px;
+  }
+
+  .popularAccomodations{
+    background-color: #F2F2F2;
+    width: 420px;
+    height: 625px;
+    border-radius: 20px;
+  }
+
+  .allAccomodationsCard{
+    background-color: white;
+    width:247px;
+    height: 200px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 6px #e7e7e7;
+  }
+
+  .accomodationRating__star--blue{
+    color:#0065FC;
+    margin-left:1.5px;
+  }
+
+  .accomodationRating__star--grey{
+    color:#d9d9d9;
+    margin-left:1.5px;
+  }
+
+  .accomodationRating{
+      margin-left: 13.5px;
+      font-size:0.75rem;
+      display: flex;
+  }
+
+  .allAccomodationsCard__image{
+    height:115px;
+    width:235px;
+    object-fit: cover;
+    margin:5px 5px 0 5px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .accomodationCard__headline{
+      margin:10px 0 6px 15px;
+      padding:0;
+      font-weight: 800;
+  }
+
+  .accomodationCard__price{
+      margin:0 0 6px 15px;
+  }
+
+  .allAccomodations__headline{
+      margin: 48px 0 22px 35px;
+      font-weight: 800;
+      font-size: 1.5rem;
+  }
+
+  .allAcommodations__showMore{
+    font-weight: 800;
+    margin-left: 38px;
+    margin-top:11px;
+    font-size: 1.1rem;
+    font-weight: 750;
+  }
+
+  .popularAccomodations__headline{
+    display: flex;
+    justify-content: space-between;
+    margin: 48px 35px 22px 35px;
+    font-weight: 800;
+    font-size: 1.5rem;
+  }
+
+  .delete{
+    height: 200px;
+  }
+
+  .popularAccomodationsCard__image{
+    width:127px;
+    height:134px;
+    object-fit: cover;
+    margin:5px 0 5px 5px; 
+    border-radius: 15px 0 0 15px;
+  }
+
+  .popularAccomodationsCard{
+    background-color: white;
+    width:343px;
+    height:144px;
+    display: flex;
+    margin-bottom:33px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 6px #e7e7e7;
+  }
+
+  .popularAccomodationsArticles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   
-  
+
+  .popularAccomodationsRating{
+    margin-top: 45px;
+  }
+
+  .popularAccomodationsCard_textContent{
+    width:200px;
+  }
