@@ -198,7 +198,7 @@
     height: 200px;
     margin-bottom: 30px;
     border-radius: 20px;
-    box-shadow: 8px 8px 6px #e7e7e7;
+    box-shadow: 2px 2px 6px 4px #d9d9d9;
   }
 
   .accomodationRating__star--blue{
@@ -276,7 +276,7 @@
     display: flex;
     margin-bottom:33px;
     border-radius: 20px;
-    box-shadow: 8px 8px 6px #e7e7e7;
+    box-shadow: 2px 2px 6px 4px #d9d9d9;
   }
 
   .popularAccomodationsArticles{
@@ -293,3 +293,60 @@
   .popularAccomodationsCard_textContent{
     width:200px;
   }
+
+  /*=============================================ACTIVITIES=============================================*/
+
+  .activities__articles{
+    height:450px;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .activityCard{
+    width: 302px;
+    box-shadow: 2px 2px 6px 4px #d9d9d9;
+    border-radius: 15px;
+  }
+
+  .activityCard__image{
+    width: 100%;
+    height: 100%;
+    max-height: calc(100% - 60px);
+    object-fit:cover;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .activityCard--ht53p100{
+    height:53%;
+  }
+
+  .activityCard--ht37p100{
+    height:37%
+  }
+
+  .activityCard--ht100p100{
+    height:100%
+  }
+
+  .activityCard--ht43p100{
+    height:43%;
+  }
+
+  .activityCard--ht47p100{
+    height:47%
+  }
+
+  .activity__image--BRTfilter{
+    filter: brightness(120%);
+  }
+
+  .activityCard__image--VERToffset2p100{
+  object-position:50% 2%;
+  }
+
+ 
+
+
