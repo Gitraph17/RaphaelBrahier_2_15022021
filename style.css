@@ -3,6 +3,8 @@
     width: 90%;
     max-width: 1400px;;
     font-family: Raleway;
+    display:flex;
+    flex-direction: column;
 }
 
 /*--------------------HEADER--------------------*/
@@ -347,6 +349,34 @@
   object-position:50% 2%;
   }
 
+/*=============================================FOOTER=============================================*/
+
+.siteFooter{
+  display: flex;
+  background-color: #F2F2F2;
+  margin-top: 50px;
+  width: 108%;
+  height:220px;
+  align-self: center;
+  font-size: 0.9rem;
+}
+
+.FooterSection{
+ margin:35px 200px 0 58px;
+}
+
+.FooterSectionList{
+  list-style-type: none;
+  padding: 0;
+}
+
+.FooterSection__headline{
+  padding:0;
+}
+
+.FooterSectionList__item{
+  padding-top: 10px;
+}
  
 
 
