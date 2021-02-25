@@ -1,0 +1,225 @@
+.blocPage{
+  padding:0;
+}
+
+body{
+  margin:0;
+}
+
+.SearchForm__SearchButton{
+    display:none;
+  }
+
+  .InputBlock{
+    border-radius: 15px;
+    border-right: none;
+    align-items: center;
+  }
+
+  .SearchForm__searchButtonMobileVersion{
+    display:inline;
+    background-color:#0065FC;
+    color: white;
+    padding:0 18px 0 18px;
+    font-family: Raleway;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    height:42px;
+  }
+
+  .SiteHeader{
+    flex-wrap:wrap;
+    align-items: center; 
+  }
+
+  .SiteHeader__logo{
+   order:1;
+   margin: 15px 0 0px 15px;
+   padding-bottom: 5px;
+  }
+
+  .HeaderNav{
+    width:100%;
+    height:30px;
+    order:3;
+  }
+
+  .HeaderNavMenu__link, .subscribe, .SiteHeader__logo {
+    padding-top:0;
+    padding-bottom: 12px;
+  }
+
+  .HeaderNavMenu li{
+    width:100%;
+  }
+
+  .HeaderNavMenu__link{
+    display: block;
+    width:100%;
+    border-top:none;
+    border-bottom:2px solid #f2f2f2 ;
+  }
+
+  .HeaderNavMenu__link:hover{
+    border-top:none;
+    border-bottom:2px solid #0065fc ;
+  }
+
+  .HeaderNavMenu{
+    width:100%;
+    padding:0;
+    justify-content: space-around;
+  }
+
+
+  .subscribe{
+    order:2;
+    width:100px;
+    margin-left: auto;
+    margin-top:20px;
+  }
+
+  .SearchForm{
+    margin:20px 50px 0 15px;
+  }
+
+  .filters{
+    margin:0 0 0 15px;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .filters__menu{
+    padding:0;
+    flex-wrap: wrap;
+    width:100%
+  }
+
+  .filtersItem{
+    margin:0 15px 10px 0;
+  }
+
+  .filters__headline{
+    margin: 30px 0 0 0;
+  }
+
+  .filtersInfo{
+    margin:0 10px 20px 0;
+    align-items: flex-start;
+  }
+
+  .filtersInfo__text{
+    margin-top: 3px;
+  }
+
+
+  .accomodations{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .allAccomodations{
+    order:2;
+    width:100%;
+    background-color: white;
+  }
+
+  .popularAccomodations{
+    padding-bottom: 30px;
+    order:1;
+    width:100%;
+    border-radius:unset;
+  }
+
+  .popularAccomodations__headline{
+    margin: 48px 15px 22px 15px;
+  }
+
+  .popularAccomodationsCard{
+    margin-bottom: 15px;
+  }
+
+  .allAccomodationsCard__image{
+    width:326px;
+  }
+  
+  .allAccomodationsCard{
+    width:336px;
+    margin:10px auto;
+  }
+  
+  .allAccomodationsCardLink{
+    width:100%
+  }
+
+  .allAccomodations__headline{
+    margin-left: 20px;
+  }
+
+  .allAcommodations__showMore{
+    margin-left:15px;
+  }
+
+
+  .activities__articles{
+    width:100%;
+    height:auto;
+    align-content: center;
+  }
+
+  .activityCard{
+    width:336px;
+    height:200px;
+    margin-bottom: 30px;
+  }
+
+  .activities__headline{
+    margin-left: 15px;
+  }
+
+  .cardLink:hover{
+    transform:scale(1.05);
+  }
+
+  .footerSectionBloc{
+    flex-direction: column;
+  }
+
+  .siteFooter{
+    height: auto;
+    margin-top:20px;
+  }
+
+  .FooterSection{
+    margin: 0;
+  }
+
+  .footerSectionBloc{
+    padding: 30px 0 30px 5px;
+  }
+
+@media screen and (max-width: 374px){
+  .popularAccomodationsCard{
+    width:300px;
+    height: 126px;
+  }
+
+  .popularAccomodationsCard__image{
+    width:112px;
+    height:116px;
+  }
+
+  .popularAccomodationsRating{
+    margin-top: 30px;
+  }
+
+  .allAccomodationsCard{
+    width:300px;
+  }
+
+  .allAccomodationsCard__image{
+    width:290px;
+  }
+}

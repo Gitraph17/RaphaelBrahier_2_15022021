@@ -1,0 +1,107 @@
+@media screen and (max-width: 1157px){
+    .popularAccomodationsCard{
+    width:235px;
+    height:200px;
+    margin-bottom: 30px;
+    flex-direction: column;
+    }
+
+    .popularAccomodationsCard__image{
+    height: 100px;
+    width:225px;
+    margin: 5px 5px 0 5px;
+    border-radius: 15px 15px 0 0;
+    }
+
+    .popularAccomodationsRating{
+    margin-top:0;
+    }
+
+    .popularAccomodations__headline{
+    max-width: 250px;;
+    align-items: center;
+    margin-top:20px;
+    }
+
+    .activityCard{
+    width: 250px;
+    }
+
+
+  .FooterSection{
+    margin:40px 15% 0 0;
+    }
+}
+
+
+ @media screen and (min-width: 1158px) and (max-width: 1220px){
+  .activityCard{
+    width:265px;
+  }
+}
+
+@media screen and (max-width: 1100px){
+  .activityCard{
+    width:240px;
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .activityCard{
+    width:225px;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .activityCard{
+    width:210px;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .activityCard{
+    width:200px;
+  }
+
+}
+
+@media screen and (max-width: 900px){
+  .filtersItem{
+    margin-left:0;
+    margin-right: 20px;
+    
+  }
+
+  .filters__menu{
+    padding-left: 0;
+  }
+
+  .filters__headline{
+    margin-right: 100%;
+    margin-bottom:0px;
+  }
+
+  .activityCard{
+    width:185px;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .activityCard{
+    width:175px;
+  }
+
+  .popularAccomodationsCard, .allAccomodationsCard{
+    width:212px;
+  }
+
+  .popularAccomodationsCard__image, .allAccomodationsCard__image{
+    width:202px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .activityCard{
+    width:170px;
+  }
+}
