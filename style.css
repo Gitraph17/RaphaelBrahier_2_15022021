@@ -1,457 +1,468 @@
-body{
+body {
   font-family: Raleway;
+  font-size: 16px;
+  margin:0;
 }
 
-.blocPage{
-    margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
-    max-width: 1300px;
-    min-width:320px;
+.blocPage {
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  max-width: 1300px;
+  min-width: 320px;
 }
 
 /*°°°°°°°°°°°°°°°°°°°°°°°°°°°HEADER°°°°°°°°°°°°°°°°°°°°°°°°°°°HEADER°°°°°°°°°°°°°°°°°°°°°°°°°°°HEADER°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
-.SiteHeader{
-    width: 100%;
-    display: flex;
-    justify-content: flex-end;
+.siteHeader {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 40px;
 }
 
-.SiteHeader__logo{
-    padding-top: 30px;
-    margin-right: auto;
+.siteHeader__logo {
+  margin-top: 30px;
+  margin-right: auto;
 }
 
-.MenuList{
-    display: flex;
-    list-style-type: none;
-    margin-top:10px;
+.menuList { /*Cette classe permet d'appliquer des propriétés générales à toutes les listes de la page*/
+  display: flex;
+  list-style-type: none;
 }
 
-
-.HeaderNavMenu__link, .subscribe{
-    display: block;
-    font-weight: 500;
-    font-size: 0.9rem;
-    width:140px;
-    text-align: center;
-    text-decoration: none;
-    border-top: 2px solid white;
-    color: black;
-    padding-top:30px;
+.headerNavList__link,
+.siteHeader__subscribeLink {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  width: 140px;
+  text-align: center;
+  border-top: 2px solid #FFFFFF;
+  padding-top: 30px;
 }
 
-.subscribe{
-    display: block;
-    margin-top:10px;
-    color:#0065FC; 
-    font-weight: 800;
+.siteHeader__subscribeLink {
+  margin-top: 15px;
+  color: #0065fc;
+  font-weight: 800;
 }
 
-.HeaderNavMenu__link:hover{
-    border-top: 2px solid #0065FC;
-    color:#0065FC;
+.headerNavList__link:hover {
+  border-top: 2px solid #0065fc;
+  color: #0065fc;
 }
 /*________________________FIN HEADER________________________FIN HEADER________________________FIN HEADER________________________*/
 
-
 /*°°°°°°°°°°°°°°FORMULAIRE DE RECHERCHE°°°°°°°°°°°°°°FORMULAIRE DE RECHERCHE°°°°°°°°°°°°°°FORMULAIRE DE RECHERCHE°°°°°°°°°°°°°°°*/
-.SearchForm__headline{
-    font-size: 1.1rem;
-    margin:30px 0 0 0;
+.searchForm__headline {
+  font-size: 1.3em;
+  margin-bottom: 0;
 }
 
-.SearchForm__subhead{
-    margin:7px 0 16px 0;
-    font-size: 0.78rem;
+.searchForm__subheading {
+  font-size: 0.9em;
+  margin: 7px 0 17px 0;
 }
 
-.SearchFunction{
-    display:flex;
-    height: 42px;
-}
-
-.SearchForm__searchButtonMobileVersion{
+.inputBar__searchButton--mobileVersion {
   display: none;
 }
 
-.InputBlock{
-    display: flex;
-    border:1px solid #F2F2F2 ;
-    border-radius: 15px 0 0 15px;
-    text-align: center;
-    align-items: center;
+.inputBar{
+  display: flex;
+  align-items: center;
+  height: 44px;
+  width: 360px;
+  border: 1px solid #f2f2f2;
+  border-radius: 15px;
+  border-right: none;
 }
 
-.InputBlock__icone{
-    background-color: #F2F2F2;
-    width: 45px;
-    height: 30px;
-    border-radius: 15px 0 0 15px;
-    padding-top: 12px;
+.inputBar__icone {
+  background-color: #f2f2f2;
+  min-width: 46px;
+  line-height: 44px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 15px 0 0 15px;
 }
 
-.InputBlock__EntryField{
-    outline: none;
-    font-family: Raleway;
-    font-weight: 800;
-    font-size: 0.85em;
-    border:none;
-    margin:1px 0 1px 0;
-    padding-left: 17px;
-
+.inputBar__entryField,
+.inputBar__searchButton {
+  outline: none;
+  border: none;
+  font:inherit;
 }
 
-.InputBlock__EntryField::placeholder {
-    color: black;
-    opacity: 1;
+.inputBar__entryField {
+  font-weight: 800;
+  padding-left: 15px;
 }
 
-.SearchForm__SearchButton{
-    cursor: pointer;
-    outline: none;
-    background-color:#0065FC;
-    color: white;
-    padding:0 18px 0 18px;
-    font-family: Raleway;
-    font-weight: 600;
-    border: none;
-    border-radius:0 15px 15px 0;
+.inputBar__entryField::placeholder {
+  color: #000000;
+  opacity: 1;
+}
+
+.inputBar__searchButton {
+  width:135px;
+  height: 46px;
+  background-color: #0065fc;
+  color:#FFFFFF;
+  font-weight: 600;
+  padding: 0 18px;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
 }
 /*___________FIN FORMULAIRE DE RECHERCHE___________FIN FORMULAIRE DE RECHERCHE___________FIN FORMULAIRE DE RECHERCHE___________*/
 
-
 /*°°°°°°°°°°°°°°°°°°°°°°°°°°FILTRES°°°°°°°°°°°°°°°°°°°°°°°°°°FILTRES°°°°°°°°°°°°°°°°°°°°°°°°°°FILTRES°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
-.filters{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: 15px;
+.filters,
+.filtersItem,
+.filtersItem__icone,
+.filtersInfo {
+  display: flex;
+  align-items: center;
 }
 
-.filters__menu{
-    font-weight: 600;
-    font-size: 0.8rem;
-    padding-left: 15px;
+.filters {
+  flex-wrap: wrap;
+  margin-top: 15px;
 }
 
-.filtersItem{
-    height: 35px;
-    display: flex;
-    align-items: center;
-    border: 2px solid #F2F2F2;
-    padding-left: 35px;
-    margin-left: 30px;
-    border-radius: 20px;
-    cursor:pointer;
-    position: relative;
-    transition: background-color 1.5s ease .2s, border 2s ease, box-shadow 1s ease, transform 1s ease;
+.filters__list {
+  padding-left: 15px;
 }
 
-.filtersItem:hover  {
-  box-shadow: 3px 3px 6px rgb(158, 156, 156);
-  transform:scale(1.1);
-  border: 2px solid #DEEBFF;
-  background-color:#DEEBFF;
+.filtersItem {
+  height: 40px;
+  border: 2px solid #f2f2f2;
+  padding-left: 35px;
+  margin-left: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 1.5s ease 0.2s, border 2s ease, box-shadow 1s ease, transform 1s ease;
 }
 
-.filtersItem:hover .filtersItem__icone{
-  left:100%;
+.filtersItem:hover {
+  box-shadow: 3px 3px 6px #9e9c9c;
+  transform: scale(1.1);
+  border: 2px solid #deebff;
+  background-color: #deebff;
+}
+
+.filtersItem__icone {
+  justify-content: center;
+  font-size: 1.05em;
+  color: #0065fc;
+  width: 20px;
+  height: 20px;
+  padding: 12px;
+  background-color: #deebff;
+  border-radius: 50%;
+  position: absolute;
+  left: -2px;
+  transition: all 1s ease;
+}
+
+.filtersItem:hover .filtersItem__icone {
+  left: 100%;
   transform: translateX(-95%) rotate(360deg);
-  background-color: white;
-  font-size: 20px;
+  background-color: #FFFFFF;
+  font-size: 1.3em;
 }
 
-.filtersItem:hover .filtersItem__headline{
+.filtersItem__headline,
+.filters__headline {
+  font-size: 1em;
+}
+
+.filtersItem__headline {
+  padding:0 20px;
+  transition: all 1s ease;
+}
+
+.filtersItem:hover .filtersItem__headline {
   transform: translateX(-35px);
 }
 
-.filtersItem__icone{
-    position: absolute;
-    left: -2px;
-    color:#0065FC;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 17px;
-    height: 17px;
-    padding:11px;
-    background-color:#DEEBFF;
-    border-radius: 50%;
-    transition:all 1s ease;
-  }
-  
-  .filtersItem__headline{
-    padding-left: 10px;
-    padding-right: 10px;
-    transition: all  1s ease;
-  }
+.filters__headline {
+  margin-left: 8px;
+}
 
-  .filters__headline{
-    font-size: 1rem;
-    margin-left: 8px;
-  }
+.filtersInfo {
+  width: 100%;
+  margin: 15px 0 30px 8px;
+}
 
-  .filtersInfo{
-    width:100%;
-    display: flex;
-    align-items: center;
-    margin:15px 0 30px 8px;
-  }
-
-  .IconeInfo{
-    text-align: center;
-    color:#0065FC;
-    font-size: 12px;
-    height: 12px;
-    width: 12px;
-    padding: 5px;
-    border: 2px solid #F2F2F2;
-    border-radius:17px;
-    margin-right: 10px;
-  }
+.filtersInfo__icone {
+  text-align: center;
+  color: #0065fc;
+  font-size: 12px;
+  line-height: 12px;
+  width: 12px;
+  min-width: 12px;
+  padding: 5px;
+  border: 2px solid #f2f2f2;
+  border-radius: 17px;
+  margin-right: 10px;
+}
 /*_______________________FIN FILTRES_______________________FIN FILTRES_______________________FIN FILTRES_______________________*/
 
 
-/*°°°°°°°°°°°°°°°°°°°°°°HEBERGEMENTS°°°°°°°°°°°°°°°°°°°°°°HEBERGEMENTS°°°°°°°°°°°°°°°°°°°°°°HEBERGEMENTS°°°°°°°°°°°°°°°°°°°°°°°*/
-.cardLink{
-  height:inherit;
+/*............Propriétés générales concernant la mise en forme des LIENS des cartes hébergements et activités............*/
+.cardLink {  /*La balise <a> (lien) étant le conteneur de chaque carte, c'est elle qui régit la mise en forme globale de la carte*/
   color: inherit;
   text-decoration: none;
-  cursor: pointer;
   transition: all 0.5s ease;
+  background-color:#FFFFFF;
+  box-shadow: 2px 2px 6px 4px #d9d9d9;
+  border-radius: 20px;
+  font-size: 0.9em;
 }
 
-.cardLink:hover{
-  transform:scale(1.1);
+.cardLink:hover {
+  transform: scale(1.05);
 }
+/*...........................................................................................................*/
 
 
-  .accomodations{
+/*°°°°°°°°°°°°°°°°°°°°°°HEBERGEMENTS°°°°°°°°°°°°°°°°°°°°°°HEBERGEMENTS°°°°°°°°°°°°°°°°°°°°°°HEBERGEMENTS°°°°°°°°°°°°°°°°°°°°°°°*/
+.accomodations {
   display: flex;
   justify-content: space-between;
-  font-size: 0.9rem;
   width: 100%;
-  }
+}
 
-  .allAccomodationsArticles{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
+.accomodationsMainBlock,
+.popularAccomodations {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
 
-  .allAccomodations{
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    width: 65%;
-    height: auto;
-  }
+/*...........................Spécifique au MainBlock (Hébérgements à Marseille)...........................*/
+.accomodationsMainBlock {
+  width: 65%;
+}
 
-  .popularAccomodations{
-    background-color: #F2F2F2;
-    width: 32%;
-    height: auto;
-    border-radius: 20px;
-  }
+.accomodationsMainBlock__headline {
+  margin: 48px 0 22px 35px;
+  font-size: 1.3em;
+  font-weight: 800;
+}
 
-  .allAccomodationsCard{
-    background-color: white;
-    width:235px;
-    height: 200px;
-    margin-bottom: 30px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 6px 4px #d9d9d9;
-  }
+.accomodationsMainBlockCardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0 10px;
+}
 
-  .accomodationRating__star--blue{
-    color:#0065FC;
-    margin-left:1.5px;
-  }
+.accomodationsMainBlockCardLink{ /*La balise <a> (lien) étant le conteneur de chaque carte, c'est elle qui régit la mise en forme globale de la carte*/
+  width:30%;
+  min-width:220px;
+  height: 202px;
+  margin:0 3px 30px 3px;
+}
 
-  .accomodationRating__star--grey{
-    color:#d9d9d9;
-    margin-left:1.5px;
-  }
+.accomodationsMainBlockCard__image {
+  height: 115px;
+  width: calc(100% - 10px);
+  margin: 5px 5px 0 5px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
 
-  .accomodationRating{
-      margin-left: 13.5px;
-      font-size:0.75rem;
-      display: flex;
-  }
+.accomodationsMainBlock__showMore {
+  margin:11px 0 40px 38px;
+  font-size: 1.1em;
+  font-weight: 800;
+}
+/*............................................................................................................*/
 
-  .allAccomodationsCard__image{
-    height:115px;
-    width:225px;
-    margin: 5px 5px 0 5px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-  }
+/*.........................Spécifique à  PopularAccomodations (Les plus populaires)...........................*/
+.popularAccomodations {
+  width: 32%;
+}
 
-  .accomodationCard__headline{
-      margin:10px 0 6px 15px;
-      padding:0;
-      font-weight: 800;
-  }
+.popularAccomodations__headline {
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 48px 7.5% 22px 7.5%;
+  font-weight: 800;
+  font-size: 1.3em;
+}
 
-  .accomodationCard__price{
-      margin:0 0 6px 15px;
-  }
+.popularAccomodationsCardsContainer {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+.popularAccomodationsCardLink{ /*La balise <a> (lien) étant le conteneur de chaque carte, c'est elle qui régit la mise en forme globale de la carte*/
+  width:85%;
+  height: 29%;
+  max-height: 180px;
+}
 
-  .allAccomodations__headline{
-      margin: 48px 0 22px 35px;
-      font-weight: 800;
-      font-size: 1.5rem;
-  }
+.popularAccomodationsCard {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position:relative;
+}
 
-  .allAcommodations__showMore{
-    font-weight: 800;
-    margin-left: 38px;
-    margin-top:11px;
-    font-size: 1.1rem;
-    font-weight: 800;
-  }
+.popularAccomodationsCard__image {
+  width: 40%;
+  height: calc(100% - 10px);
+  object-fit: cover;
+  margin: 5px 0 5px 5px;
+  border-radius: 15px 0 0 15px;
+}
 
-  .popularAccomodations__headline{
-    display: flex;
-    justify-content: space-between;
-    margin: 48px 35px 22px 35px;
-    font-weight: 800;
-    font-size: 1.5rem;
-  }
+.popularAccomodationsCard_textContent {
+  margin-right: 10px;
+  width:50%
+}
 
-  .popularAccomodationsCard__image{
-    width:125px;
-    height:131px;
-    object-fit: cover;
-    margin:5px 0 5px 5px; 
-    border-radius: 15px 0 0 15px;
-  }
+.popularAccomodationsRating {
+  position:absolute;
+  bottom:20px;
+  margin-left: 15px;
+}
+/*...........................................................................................................*/
 
-  .popularAccomodationsCard{
-    background-color: white;
-    width:336px;
-    height:141px;
-    display: flex;
-    margin-bottom:33px;
-    border-radius: 20px;
-    box-shadow: 2px 2px 6px 4px #d9d9d9;
-  }
+/*............Propriétés communes à toutes les cartes de la section Accomodations (Hébergements).............*/
+.accomodationCard__headline {
+  margin: 10px 0 6px 15px;
+  padding: 0;
+  font-weight: 800;
+}
 
-  .popularAccomodationsArticles{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
-  
-  .popularAccomodationsRating{
-    margin-top: 45px;
-  }
+.accomodationCard__price {
+  margin: 0 0 6px 15px;
+}
 
-  .popularAccomodationsCard_textContent{
-    width:200px;
-  }
+.accomodationCard__price--bold{
+  font-style: normal;
+  font-weight: 700;
+}
 
-  /*____________________FIN HEBERGEMENTS____________________FIN HEBERGEMENTS____________________FIN HEBERGEMENTS___________________*/
+.accomodationRating {
+  margin-left: 13.5px;
+  font-size: 0.75em;
+  display: flex;
+}
+
+.accomodationRating__star--blue {
+  color: #0065fc;
+  margin-left: 1.5px;
+}
+
+.accomodationRating__star--grey { 
+  color: #d9d9d9;
+  margin-left: 1.5px;
+}
+/*...........................................................................................................*/
+/*____________________FIN HEBERGEMENTS____________________FIN HEBERGEMENTS____________________FIN HEBERGEMENTS___________________*/
 
 
-  /*°°°°°°°°°°°°°°°°°°°°°°°°°ACTIVITES°°°°°°°°°°°°°°°°°°°°°°°°°ACTIVITES°°°°°°°°°°°°°°°°°°°°°°°°°ACTIVITES°°°°°°°°°°°°°°°°°°°°°°°°°°*/
+/*°°°°°°°°°°°°°°°°°°°°°°°°°ACTIVITES°°°°°°°°°°°°°°°°°°°°°°°°°ACTIVITES°°°°°°°°°°°°°°°°°°°°°°°°°ACTIVITES°°°°°°°°°°°°°°°°°°°°°°°°°°*/
 
-  
-  .activities{
-    width:100%;
-    margin-top: 50px;
-  }
+.activities {
+  margin-top: 50px;
+}
 
-  .activities__articles{
-    height:450px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
-  }
+.activityCardLink{ /*La balise <a> (lien) étant le conteneur de chaque carte, c'est elle qui régit la mise en forme globale de la carte*/
+  width:22%;
+  height: 100%;
+}
 
-  .activityCard{
-    width: 285px;
-    height: 100%;
-    box-shadow: 2px 2px 6px 4px #d9d9d9;
-    border-radius: 15px;
-  }
+.activitiesCardsContainer {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+}
 
-  .activityCard__image{
-    width: 100%;
-    height: 100%;
-    max-height: calc(100% - 60px);
-    object-fit:cover;
-    border-radius: 15px 15px 0 0;
-  }
+.activityCard {
+  height: 100%;
+}
 
-  .activityCard__headline{
-    margin:18px 0 0 15px;
-    font-size: 1rem;
-  }
+.activityCard__image {
+  width: 100%;
+  height: 100%;
+  max-height: calc(100% - 60px);
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
 
-  .activityCard--ht53p100{
-    height:53%;
-  }
+.activityCard__headline {
+  margin: 12px 0 10px 15px;
+  font-size: 1.1em;
+}
 
-  .activityCard--ht37p100{
-    height:37%
-  }
+.activityCardLink--height53p100 {
+  height: 53%;
+}
 
-  .activityCard--ht100p100{
-    height:100%
-  }
+.activityCardLink--height37p100 {
+  height: 37%;
+}
 
-  .activityCard--ht43p100{
-    height:43%;
-  }
+.activityCardLink--height43p100 {
+  height: 43%;
+}
 
-  .activityCard--ht47p100{
-    height:47%
-  }
+.activityCardLink--height47p100 {
+  height: 47%;
+}
 
-  .activity__image--BRTfilter{
-    filter: brightness(120%);
-  }
+.activity__image--BRTfilter {
+  filter: brightness(120%);
+}
 
-  .activityCard__image--VERToffset2p100{
-  object-position:50% 2%;
-  }
+.activityCard__image--VERToffset2p100 {
+  object-position: 50% 2%;
+}
 /*______________________FIN ACTIVITES______________________FIN ACTIVITES______________________FIN ACTIVITES_____________________*/
 
-
 /*°°°°°°°°°°°°°°°°°°°°°°°°°°°FOOTER°°°°°°°°°°°°°°°°°°°°°°°°°°°FOOTER°°°°°°°°°°°°°°°°°°°°°°°°°°°FOOTER°°°°°°°°°°°°°°°°°°°°°°°°°°°°*/
-.siteFooter{
-  background-color: #F2F2F2;
+.siteFooter {
+  height: 220px;
   margin-top: 50px;
-  height:220px;
-  font-size: 0.9rem;
+  background-color: #f2f2f2;
+  font-size: 0.9em;
   white-space: nowrap;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0 20px;
 }
 
-.footerSectionBloc{
+.footerMenusContainer {
   display: flex;
   max-width: 1300px;
-  margin:auto;
+  margin: auto;
 }
 
-.FooterSection{
-  margin:40px 20% 0 0;
+.footerMenu {
+  margin: 40px 18% 0 5px;
 }
 
-.FooterSectionList{
-  list-style-type: none;
+.footerMenuList {
+  padding: 0;
+  flex-direction: column;
+}
+
+.footerMenu__headline {
   padding: 0;
 }
 
-.FooterSection__headline{
-  padding:0;
-}
-
-.FooterSectionList__item{
+.footerMenuList__item {
   padding-top: 10px;
 }
 /*________________________FIN FOOTER________________________FIN FOOTER________________________FIN FOOTER_______________________*/
